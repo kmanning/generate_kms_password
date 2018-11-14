@@ -23,4 +23,4 @@ Example:
 > ./bin/generate_kms_password environment=dev,application=bookstore,username=admin alias/team_key
 ```
 
-Files will be generated in your current directory.  The plain text password is available in: `password.plain_text` - do not share this.  The base64 encrypted password is in `password.plain_text.encrypted_base64` - use this to populate the KMS secret payload parameters.
+Files will be generated in your current directory.  The plain text password is available in: `password.plain_text` - do not share this.  The base64 encrypted password is in `password.plain_text.encrypted_base64`.
