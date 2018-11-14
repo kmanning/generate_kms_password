@@ -14,13 +14,13 @@ Generate a password, then encrypt that password using an encryption context and 
 #### Run the generate_password script
 
 ```
-> ./bin/generate_password <encryption_context> <kms_key>
+> ./bin/generate_kms_password <encryption_context> <kms_key>
 ```
 
 Example:
 
 ```
-> ./bin/generate_password environment=dev,application=bookstore,username=admin alias/team_key
+> ./bin/generate_kms_password environment=dev,application=bookstore,username=admin alias/team_key
 ```
 
 Files will be generated in your current directly.  The plain text password is available in: `password.plain_text` - do not share this.  The base64 encrypted password is in `password.plain_text.encrypted_base64` - use this to populate the KMS secret payload parameters.
