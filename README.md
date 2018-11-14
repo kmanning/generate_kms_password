@@ -24,3 +24,13 @@ Example:
 ```
 
 Files will be generated in your current directory.  The plain text password is available in: `password.plain_text` - do not share this.  The base64 encrypted password is in `password.plain_text.encrypted_base64`.
+
+#### Adjust the password length
+
+By default, the password will be 30 characters long.  You can adjust it by setting the PASSWORD_LENGTH environment variable.
+
+Example, 50 characters:
+
+```
+> PASSWORD_LENGTH=50 ./bin/generate_kms_password environment=dev,application=bookstore,username=admin alias/team_key
+```
