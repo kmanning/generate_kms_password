@@ -5,7 +5,7 @@ Generate a password, then encrypt that password using an encryption context and 
 
 ## Assumptions/Requirements
 
-* The AWS CLI is already installed on your machine.  See: [https://aws.amazon.com/cli/]
+* The AWS CLI is already installed on your machine.  See: https://aws.amazon.com/cli/
 * You've configured your CLI to have KMS access to an AWS Account.  I like to use [vault_exec](https://github.com/kmanning/vault_exec), but use whatever works for you.
 * This was written on OSX, but *should* work on a Unix-based system
 
